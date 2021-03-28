@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --width: 8em;
+    --height: 8em;
+}
+
+.hide{
+    display: none !important
+}
+
+main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: var(--width) var(--width) var(--width);
+    grid-template-rows: var(--height) var(--height) var(--height);
+}
+
+main > div{
+    border: 2px solid red;
+    border-radius: .5em;
+    background: black;
+    position: relative;
+}
+img{
+    object-fit: contain;
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+/* Rubsh bin */
+.rubish-bin{
+    background-color: grey;
+}
+/* Rubsh bin */
+.fountain-of-resources{
+    background-color: orange;
+    background-image: url(../img/gold.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire*/
+}
+
+/**/
+.tooltip{
+    /* background-color: rgba(0, 0, 0, .5);
+    color: white;
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    margin-left: -200px;
+    left: 50%;
+    top: 25%;
+    display: 'none' !important; */
+}
+
+/* SlotNumber */
+.slot-number{
+    color: white;
+    text-shadow: 0 0 2px red;
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 2em;
+    padding: 0em .5em ;
+    background: green;
+    display: block;
+    line-height: 2em;
+
+}
+
